@@ -2,21 +2,22 @@ html,body{
     margin:0;
     height: 100%;
 }
-.elon{
-    width:30%;
-    height: 30%;
+@font-face{
+    font-family: roboto;
+    src:url(asset/font/Roboto-Thin.ttf);
 }
-.extrait{
-    width:100%;
-
+html{
+    font-family: roboto;
+    font-size: 14px;
 }
-#content_main{
-    display: inline;
+body{
+    min-height: 100vh;
+    height: 100%;
 }
+/*------ DEBUT ENTETE-----*/
 nav{
     display:inline-block;
     height: 40px;
-    background-color: blueviolet;
     width: 100%;
     text-align: center;
     background-color: black;
@@ -33,65 +34,28 @@ nav>a:hover{
     color:darkgray;
     text-decoration: none;
 }
-
-
-.spacex{
-    width: 200px;
-    height: 200px;;
+.nav_link{
+    transition-property: color;
+    transition-duration: 3s;
+    transition-delay: 0s;
 }
-.divArt{
-    display:flex;
-}
-.monkey{
-    width:200px;
-    height: 200px;;
-}
-.fb{
-    width:200px;
-    height: 150px;
+.nav_link:hover{
+    color:red;
 }
 
-@font-face{
-    font-family: roboto;
-    src:url(asset/font/Roboto-Thin.ttf);
+/*------ FIN ENTETE-----*/
+
+/*------ DEBUT BODY MAIN-----*/
+.elon{
+    width:30%;
+    height: 30%;
 }
-html{
-    font-family: roboto;
-    font-size: 14px;
-}
-.liens-articles>a{
-    padding:10px;
-}
-.liens-articles{
-    padding:20px;
-}
-body{
-    min-height: 100vh;
-    height: 100%;
-}
-footer{
-    height: 40px;
-    position:relative;
-    display:flex;
-    bottom:0px;
+.extrait{
     width:100%;
-    background-color: black;
-    color:white;
-    justify-content: space-between;
-    margin-top:150px;
-}
 
-footer>div>a{
-    color:white;
-    font-size:20px;
-    margin:10px
 }
-.footer_infos{
-    display: flex;
-    flex-direction: row;
-}
-.footer_infos>p{
-    margin:10px;
+#content_main{
+    display: inline;
 }
 
 a{
@@ -137,4 +101,77 @@ article *{
     display: flex;
     justify-content: space-between;
 }
+.liens-articles>a{
+    padding:10px;
+}
+.liens-articles{
+    padding:20px;
+}
+.divArt{
+    display:flex;
+}
+/*------ FIN BODY MAIN-----*/
+
+/*------ DEBUT FOOTER-----*/
+footer{
+    height: 40px;
+    position:relative;
+    display:flex;
+    bottom:0px;
+    width:100%;
+    background-color: black;
+    color:white;
+    justify-content: space-between;
+    margin-top:150px;
+}
+
+footer>div>a{
+    color:white;
+    font-size:20px;
+    margin:10px;
+}
+.footer_infos{
+    display: flex;
+    flex-direction: row;
+}
+.footer_infos>p{
+    margin:10px;
+}
+.footer_link{
+    transition-property: font-size;
+    transition-duration: 3s;
+    transition-delay: 0s;
+}
+.footer_link:hover{
+    font-size: 25px;
+    text-decoration:none;
+}
+
+/*------ FIN FOOTER-----*/
+
+/*------ DEBUT AUTRES PAGES-----*/
+
+.spacex{
+    width: 200px;
+    height: 200px;;
+}
+
+.monkey{
+    width:200px;
+    height: 200px;;
+}
+.fb{
+    width:200px;
+    height: 150px;
+}
+
+/*------ FIN AUTRES PAGES-----*/
+
+
+
+
+
+
+
+
 
