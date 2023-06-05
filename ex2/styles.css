@@ -1,0 +1,36 @@
+.elon{
+    width:180px;
+}
+#content_main{
+    display: flex;
+}
+nav{
+    display:flex;
+}
+nav a {
+    margin-left:50px;
+}
+aside{
+    padding :20px;
+}
+footer{
+    margin:30px;
+}
+footer>a{
+    margin:10px;
+}
+.spacex{
+    width: 200px;
+    height: 200px;;
+}
+.divArt{
+    display:flex;
+}
+.monkey{
+    width:200px;
+    height: 200px;;
+}
+.fb{
+    width:200px;
+    height: 150px;
+}
