@@ -21,6 +21,7 @@ nav{
     width: 100%;
     text-align: center;
     background-color: black;
+    opacity: 0;
 }
 nav a {
     color:white;
@@ -41,6 +42,20 @@ nav>a:hover{
 }
 .nav_link:hover{
     color:red;
+}
+
+nav,footer{
+   animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /*------ FIN ENTETE-----*/
@@ -91,9 +106,7 @@ width:30%;
     margin-top:20px;
     border-radius:20px;
 }
-.article_content{
-    width:70%;
-}
+
 article *{
     margin:5px;
 }
@@ -110,6 +123,45 @@ article *{
 .divArt{
     display:flex;
 }
+.article_content{
+    width:70%;
+    animation: translateRight ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes translateRight {
+    0% { transform: translateX(-100%) }
+    /*25% { transform: translateX(-300) }
+    50% { transform: translateX(-200px) }
+    75% { transform: translateX(-100px) }*/
+    100% { transform: translateX(0) }
+}
+.cote{
+    animation: translateLeft ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes translateLeft {
+    0% { transform: translateX(100%) }
+    /*25% { transform: translateX(-300) }
+    50% { transform: translateX(-200px) }
+    75% { transform: translateX(-100px) }*/
+    100% { transform: translateX(0) }
+}
+.savoirPlus{
+    animation: shake ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+ }
+ @keyframes shake{
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+ }
+
+
 /*------ FIN BODY MAIN-----*/
 
 /*------ DEBUT FOOTER-----*/
@@ -146,7 +198,18 @@ footer>div>a{
     font-size: 25px;
     text-decoration:none;
 }
-
+#partenaire{
+    animation: changecolor ease 5s;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+}
+@keyframes changecolor{
+    0% {color:red }
+    25% { color:purple }
+    50% { color : blue }
+    75% { color :green }
+    100% { color:white }
+ }
 /*------ FIN FOOTER-----*/
 
 /*------ DEBUT AUTRES PAGES-----*/
