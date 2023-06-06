@@ -8,7 +8,7 @@ html,body{
 }
 html{
     font-family: roboto;
-    font-size: 14px;
+    font-size: 1em;
 }
 body{
     min-height: 100vh;
@@ -26,7 +26,7 @@ nav{
 nav a {
     color:white;
     text-decoration: none;
-    font-size:25px;
+    font-size:1.8em;
     margin-left:10px;
     margin-right:10px;
     width:150px;
@@ -67,6 +67,7 @@ nav,footer{
 }
 .extrait{
     width:100%;
+    text-align: justify;
 
 }
 #content_main{
@@ -229,6 +230,40 @@ footer>div>a{
 }
 
 /*------ FIN AUTRES PAGES-----*/
+
+/*------ DEBUT RESPONSIVE-----*/
+@media (max-width:768px) {
+    nav>a{
+        font-size: 2em;
+    }
+
+    .section_article{
+        flex-direction: column;
+
+    }
+    section>.cote{
+        width: 90%;
+        justify-content: center;
+    }
+    .article_content{
+        width:100%
+    }
+    .elon{
+        width:50%;
+    }
+}
+@media(max-width:630px){
+    nav{
+        display:none;
+    }
+    .divArt{
+        flex-direction: column;
+    }
+    .elon{
+        width:100%;
+    }
+}
+/*------ FIN RESPONSIVE-----*/
 
 
 
